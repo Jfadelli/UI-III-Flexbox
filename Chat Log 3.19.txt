@@ -1,0 +1,77 @@
+Chat Log 3.19
+				/\-------<----------------<-------<<----		
+if (dang's ####){										 \
+														  \
+	                                                       \
+	                                                        \
+Ok so the pecking order for CSS                              \
+yeah yeah yeah, but implementation... does it loook like this \
+
+Parent
+	Child
+		Grandchild
+			great grandchild 
+			
+so we want to think about how our HTML is structured 
+
+
+so all of your content is wrapped around the body tag
+I think that's what I want to do.
+
+body {
+	anything you set in here, all of your elements would inherit, unless...
+	I specify otherwise in a child element? i.e. 
+
+}
+
+body{
+	rule 1;
+}
+nav{
+	or new rule 1,
+	etc...
+}
+
+but here is where it gets interesting..you have many of the same ELEMENTS ie Sections
+
+section{
+	width: 100pxx
+	This makes all the sections a particular size..blah blah;
+}
+
+but what if you want to target just one section? 
+you can either choose its class with .xyz
+yeah like that.
+
+SO what is the purpse of [[[Don't use it then]]]?
+"body > nav"{
+	so this would be for specificity. it's like the old way to target things
+	people usually name each class these days.
+	look at line 42 in your html
+	what if you wanted to set section image to a certain size?
+}
+
+you would then use
+this is because it is more general. 
+
+section img {
+
+}
+give it a shot, see what happens ^^^
+
+
+I think I get it. I misunderstood the current relevence of using the technique 
+
+don't you mean section.img{
+hmmm... i forget if its a space or a . 
+try both
+
+}
+to modify what though? 
+
+try doing width: 20vh Can you move over to ther services.htm? My index is already pixel perfect, 
+and I don't want to mess it up.
+
+yeah no problem
+do you want to make a second CSS file for the services.html?
+
